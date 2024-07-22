@@ -1,0 +1,28 @@
+<!-- grievance_popup.xml -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background = "@drawable/popup_margin_background">
+
+    <TextView
+        android:id="@+id/fullGrievanceTextView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Full Grievance Text"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/solveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Solve"
+        android:textSize = "40px"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

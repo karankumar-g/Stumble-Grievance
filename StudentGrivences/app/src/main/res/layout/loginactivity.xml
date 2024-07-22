@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/collegeLogoImageView"
+        android:layout_width="195dp"
+        android:layout_height="187dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/college_logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/collegeLogoImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-34dp"
+        android:text="LOGIN DETAILS"
+        android:textColor="#0B680F"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/collegeLogoImageView"
+        android:layout_marginTop="16dp"
+        android:hint="Username"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usernameEditText"
+        android:layout_marginTop="16dp"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <RadioGroup
+        android:id="@+id/loginTypeRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordEditText"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/studentRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Student" />
+
+        <RadioButton
+            android:id="@+id/staffRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Staff" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginTypeRadioGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textSize = "50px"
+        android:background="@drawable/button_background"
+        android:text="Login"
+        android:textColor="@android:color/white" />
+
+
+    <TextView
+        android:id="@+id/signUpTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Don't have an account? Sign Up"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:clickable="true"
+        android:onClick="goToSignUpActivity" />
+
+</RelativeLayout>

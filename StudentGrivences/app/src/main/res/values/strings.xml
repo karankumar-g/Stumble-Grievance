@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Stumble University</string>
+
+    <string-array name="categories_array">
+        <item>Food</item>
+        <item>Hostel</item>
+        <item>Classroom</item>
+        <item>Examination</item>
+        <item>Other</item>
+    </string-array>
+    <string name="greeting_staff">Hello, %1$s!</string>
+
+</resources>

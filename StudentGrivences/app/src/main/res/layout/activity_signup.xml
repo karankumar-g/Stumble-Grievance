@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/signupImageView"
+        android:layout_width="244dp"
+        android:layout_height="256dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/college_logo" />
+
+    <TextView
+        android:id="@+id/signUpTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signupImageView"
+        android:layout_centerHorizontal="true"
+        android:text="Sign Up for Student"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/signupUsernameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signUpTextView"
+        android:layout_marginTop="16dp"
+        android:hint="Username"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/signupPasswordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signupUsernameEditText"
+        android:layout_marginTop="16dp"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+
+
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signupPasswordEditText"
+        android:layout_marginTop="24dp"
+        android:textSize = "50px"
+        android:background="@drawable/button_background"
+        android:text="Sign Up"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

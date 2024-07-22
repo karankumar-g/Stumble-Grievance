@@ -1,0 +1,24 @@
+<!-- popup_margin_background.xml -->
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <!-- Background -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/black" />
+        </shape>
+    </item>
+    <!-- Margin -->
+    <item
+        android:left="3dp"
+        android:right="3dp"
+        android:top="3dp"
+        android:bottom="3dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/white" />
+        </shape>
+    </item>
+</layer-list>
